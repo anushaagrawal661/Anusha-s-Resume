@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anusha Agrawal - Professional Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Anusha <span>Agrawal</span></div>
+      <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="leadership.html">Leadership</a>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero fade-in">
+        <img
+          src="https://media.licdn.com/dms/image/v2/D5603AQGkkVoTaxj0ag/profile-displayphoto-shrink_400_400/B56ZXiWCw2GsAg-/0/1743259185334?e=1750291200&v=beta&t=yD-cUMHQwZZ52eJH3Islp18u-rVtAMbdNRzP-G19W4U"
+          alt="Anusha Agrawal"
+          class="profile-photo"
+        />
+        <div class="hero-content">
+          <h1>Hello!</h1>
+          <h2>A Bit About Me:</h2>
+          <p>
+            Creative and driven individual passionate about solving real-world
+            business problems and leading impactful projects. Skilled in graphic
+            designing, content creation, and social media strategy, with a deep
+            interest in corporate structures and entrepreneurship. Known for
+            strong communication, leadership, and people skills.
+          </p>
+          <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="leadership.html">Leadership</a>
+      </nav>
+      <div class="contact-info">
+        <p><i class="fas fa-phone"></i> Phone: xxxxxxxxxx</p>
+        <p><i class="fas fa-envelope"></i> Email: xxxxxxxxxxxx@gmail.com</p>
+      </div>
+
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/anusha-agrawal-839b28293"
+          target="_blank"
+          aria-label="LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const mainNav = document.getElementById("mainNav");
+
+      hamburger.addEventListener("click", () => {
+        mainNav.classList.toggle("active");
+        hamburger.innerHTML = mainNav.classList.contains("active")
+          ? '<i class="fas fa-times"></i>'
+          : '<i class="fas fa-bars"></i>';
+      });
+    </script>
+  </body>
+</html>

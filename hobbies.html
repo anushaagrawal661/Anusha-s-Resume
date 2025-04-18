@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hobbies and Interests</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Anusha <span>Agrawal</span></div>
+      <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="leadership.html">Leadership</a>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <main>
+      <div class="card">
+        <section id="hobbies">
+          <h2>Hobbies and Interests</h2>
+          <ul>
+            <li>-Painting and sketching</li>
+            <li>-Singing</li>
+            <li>-Photography</li>
+            <li>-Gardening and planting</li>
+            <li>-Creative exploration and content ideation</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="leadership.html">Leadership</a>
+      </nav>
+
+      <div class="social-links">
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a
+          href="https://www.linkedin.com/in/anusha-agrawal-839b28293"
+          target="_blank"
+          aria-label="LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const mainNav = document.getElementById("mainNav");
+
+      hamburger.addEventListener("click", () => {
+        mainNav.classList.toggle("active");
+        hamburger.innerHTML = mainNav.classList.contains("active")
+          ? '<i class="fas fa-times"></i>'
+          : '<i class="fas fa-bars"></i>';
+      });
+    </script>
+  </body>
+</html>
