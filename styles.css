@@ -93,12 +93,12 @@ header {
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--primary-color);
+  color: black;
   cursor: pointer;
 }
 
 .logo span {
-  color: var(--accent-color);
+  color: black;
 }
 
 nav a {
@@ -182,7 +182,7 @@ nav a:hover::after {
 
 .hero p {
   font-size: 1.1rem;
-  color: #f65a0f;
+  color: whitesmoke;
   max-width: 600px;
   margin-bottom: 2rem;
   line-height: 1.8;
